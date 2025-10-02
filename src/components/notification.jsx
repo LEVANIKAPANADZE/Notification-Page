@@ -24,7 +24,7 @@ export default function Notification({
         style={!notification.isRead ? { backgroundColor: "#F7FAFD" } : {}}
         onClick={() => read(notification.id)}
       >
-        <img src={notification.profilePic} alt="" />
+        <img src={notification.profilePic} alt="Profile picture" />
         <span>{notification.username}</span>
         <span>{notification.action}</span>
         {notification.post ? <span>{notification.post}</span> : null}

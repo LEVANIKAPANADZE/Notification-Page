@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function starter({ notifications, setNotifications }) {
   const counter = notifications.filter(
     (notification) => !notification.isRead
