@@ -1,8 +1,8 @@
 import { useState } from "react";
 import "./App.css";
 import data from "./data.json";
-import Notification from "./components/notification/notification";
-import Starter from "./components/starter/starter";
+import Notification from "./components/notification";
+import Starter from "./components/starter";
 
 function App() {
   const [notifications, setNotifications] = useState(data);
