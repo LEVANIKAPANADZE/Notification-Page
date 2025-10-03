@@ -17,3 +17,10 @@ body {
   flex-direction: column;
   padding: 24px 16px 24px 16px;
 }
+
+.circle {
+  background-color: #f65552;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
