@@ -17,7 +17,7 @@ export default function Starter({ notifications, setNotifications }) {
         <section className="flex items-center justify-between">
           <h2
             className="text-[#1C202B] font-extrabold text-[20px]
-          [leading-100%] flex"
+          [leading-100%] flex gap-[9px]"
           >
             Notifications{" "}
             <div
@@ -33,7 +33,12 @@ export default function Starter({ notifications, setNotifications }) {
               </span>
             </div>
           </h2>
-          <span onClick={markAllAsRead}>Mark all as read</span>
+          <span
+            onClick={markAllAsRead}
+            className="font-medium text-[14px] leading-[100%] text-[#5E6778] cursor-pointer hover:text-blue-600"
+          >
+            Mark all as read
+          </span>
         </section>
       </div>
     </header>

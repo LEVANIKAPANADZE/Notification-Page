@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "./App.css";
 import data from "./data.json";
 import Notification from "./components/notification";
 import Starter from "./components/starter";
