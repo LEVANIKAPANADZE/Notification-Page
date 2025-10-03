@@ -15,7 +15,24 @@ export default function Starter({ notifications, setNotifications }) {
     <header className="w-full flex justify-center">
       <div className="w-[343px] my-[24px]">
         <section className="flex items-center justify-between">
-          <h2 className="text-[#1c202b]">Notifications {counter}</h2>
+          <h2
+            className="text-[#1C202B] font-extrabold text-[20px]
+          [leading-100%] flex"
+          >
+            Notifications{" "}
+            <div
+              className="ml-[9px] w-[32px] rounded-[7px] bg-[#0A327B] 
+            flex justify-center items-center ml-[8px]"
+            >
+              {" "}
+              <span
+                className="text-white 
+                font-extrabold text-[16px] leading-[100%]"
+              >
+                {counter}
+              </span>
+            </div>
+          </h2>
           <span onClick={markAllAsRead}>Mark all as read</span>
         </section>
       </div>
