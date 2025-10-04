@@ -12,7 +12,9 @@ function App() {
         notifications={notifications}
         setNotifications={setNotifications}
       />
-      <main>
+
+      <main className="mt-6">
+        {" "}
         {notifications.map((notification) => {
           return (
             <Notification

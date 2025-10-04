@@ -13,7 +13,7 @@ export default function Starter({ notifications, setNotifications }) {
 
   return (
     <header className="w-full flex justify-center">
-      <div className="w-[343px] my-[24px]">
+      <div className="w-[343px]">
         <section className="flex items-center justify-between">
           <h2
             className="text-[#1C202B] font-extrabold text-[20px]
