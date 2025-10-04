@@ -18,21 +18,32 @@ export default function Notification({
   return (
     <div
       key={notifications.id}
-      className="flex items-center justify-center"
+      className="flex flex-col mt-[15px] rounded-[10px]"
       style={!notification.isRead ? { backgroundColor: "#F7FAFD" } : {}}
       onClick={() => read(notification.id)}
     >
-      <img src={notification.profilePic} alt="Profile picture" />
-      <span>
-        {notification.username} {notification.action}
-      </span>
-      {notification.post ? <span>{notification.post}</span> : null}
-      {notification.groupName ? <span>{notification.groupName}</span> : null}
+      <div className="flex items-center">
+        {" "}
+        <img
+          src={notification.profilePic}
+          alt="Profile picture"
+          className="w-[39px] h-[39px]"
+        />
+        <span>
+          {notification.username} {notification.action}{" "}
+          {notification.post ? <span>{notification.post}</span> : null}
+          {notification.groupName ? (
+            <span>{notification.groupName}</span>
+          ) : null}
+        </span>
+        {!notification.isRead ? <div className="circle"></div> : null}
+      </div>
+
       {notification.userPicture ? <img src={notification.userPicture} /> : null}
+      <span>{notification.time}</span>
       {notification.text ? (
         <span className="text">{notification.text}</span>
       ) : null}
-      {!notification.isRead ? <div className="circle"></div> : null}
     </div>
   );
 }

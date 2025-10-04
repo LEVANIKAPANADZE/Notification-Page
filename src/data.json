@@ -6,7 +6,7 @@
     "action": "reacted to your recent post ",
     "post": "My first tournament today!",
     "time": "1m ago",
-    "isRead": true
+    "isRead": false
   },
   {
     "id": 2,
@@ -31,7 +31,7 @@
     "profilePic": "/images/avatar-rizky-hasanuddin.webp",
     "action": "sent you a private message",
     "time": "5 days ago",
-    "isRead": true,
+    "isRead": false,
     "text": "Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game."
   },
   {
@@ -41,7 +41,7 @@
     "action": " commented on your picture",
     "userPicture": "/images/image-chess.webp",
     "time": "1 week ago",
-    "isRead": true
+    "isRead": false
   },
   {
     "id": 6,
