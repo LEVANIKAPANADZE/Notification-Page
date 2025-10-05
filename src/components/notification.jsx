@@ -34,9 +34,9 @@ export default function Notification({
           {notification.post ? <span>{notification.post}</span> : null}
           {notification.groupName ? (
             <span>{notification.groupName}</span>
-          ) : null}
+          ) : null}{" "}
+          {!notification.isRead ? <div className="circle"></div> : null}
         </span>
-        {!notification.isRead ? <div className="circle"></div> : null}
       </div>
 
       {notification.userPicture ? <img src={notification.userPicture} /> : null}
