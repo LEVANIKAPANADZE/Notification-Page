@@ -18,3 +18,10 @@ body {
   height: 8px;
   border-radius: 50%;
 }
+
+@media (min-width: 1440px) {
+  .circle {
+    width: 12px;
+    height: 12px;
+  }
+}
