@@ -18,7 +18,7 @@ export default function Notification({
   return (
     <div
       key={notifications.id}
-      className="flex flex-col mt-[15px] rounded-[10px]"
+      className="flex flex-col mt-[15px] rounded-[10px] py-[16px]  pr-[16px] pl-[24px] w-[343px]"
       style={!notification.isRead ? { backgroundColor: "#F7FAFD" } : {}}
       onClick={() => read(notification.id)}
     >
@@ -30,7 +30,7 @@ export default function Notification({
           className="w-[39px] h-[39px]"
         />
         <span>
-          {notification.username} {notification.action}{" "}
+          <span>{notification.username}</span> {notification.action}{" "}
           {notification.post ? <span>{notification.post}</span> : null}
           {notification.groupName ? (
             <span>{notification.groupName}</span>
