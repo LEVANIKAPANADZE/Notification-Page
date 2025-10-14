@@ -29,8 +29,8 @@ export default function Notification({
           alt="Profile picture"
           className="w-[39px] h-[39px] mr-[18px]"
         />
-        <span className="font-medium text-[14px] leading-[100%] text-[#5E6778] tracking-[0px]">
-          <span className="text-[#1C202B] font-extrabold text-[14px]">
+        <span className="font-medium text-[14px] leading-[100%] text-[#5E6778] tracking-[0px] parent">
+          <span className="text-[#1C202B] font-extrabold">
             {notification.username}
           </span>{" "}
           {notification.action}{" "}
@@ -38,17 +38,29 @@ export default function Notification({
             <span className="font-bold">{notification.post}</span>
           ) : null}
           {notification.groupName ? (
-            <span>{notification.groupName}</span>
+            <span className="text-[#0A327B] font-bold">
+              {notification.groupName}
+            </span>
           ) : null}{" "}
           {!notification.isRead ? <div className="circle"></div> : null}
-          <span>{notification.time}</span>
+          <br />
+          <span className="text-[#939CAD] mt-[4px] inline-block">
+            {notification.time}
+          </span>
         </span>
+        {notification.userPicture ? (
+          <img
+            src={notification.userPicture}
+            className="h-[39px] w-[39px] ml-[14px]"
+          />
+        ) : null}
       </div>
 
-      {notification.userPicture ? <img src={notification.userPicture} /> : null}
-
       {notification.text ? (
-        <span className="text">{notification.text}</span>
+        <div className="mt-[10px] py-[16px] px-[16px]">
+          {" "}
+          <span className="">{notification.text}</span>
+        </div>
       ) : null}
     </div>
   );
