@@ -27,20 +27,21 @@ export default function Notification({
         <img
           src={notification.profilePic}
           alt="Profile picture"
-          className="w-[39px] h-[39px]"
+          className="w-[39px] h-[39px] mr-[18px]"
         />
-        <span className="font-medium text-[14px] leading-[100%]">
+        <span className="font-medium text-[14px] leading-[100%] text-[#5E6778]">
           <span>{notification.username}</span> {notification.action}{" "}
           {notification.post ? <span>{notification.post}</span> : null}
           {notification.groupName ? (
             <span>{notification.groupName}</span>
           ) : null}{" "}
           {!notification.isRead ? <div className="circle"></div> : null}
+          <span>{notification.time}</span>
         </span>
       </div>
 
       {notification.userPicture ? <img src={notification.userPicture} /> : null}
-      <span>{notification.time}</span>
+
       {notification.text ? (
         <span className="text">{notification.text}</span>
       ) : null}
