@@ -29,9 +29,14 @@ export default function Notification({
           alt="Profile picture"
           className="w-[39px] h-[39px] mr-[18px]"
         />
-        <span className="font-medium text-[14px] leading-[100%] text-[#5E6778]">
-          <span>{notification.username}</span> {notification.action}{" "}
-          {notification.post ? <span>{notification.post}</span> : null}
+        <span className="font-medium text-[14px] leading-[100%] text-[#5E6778] tracking-[0px]">
+          <span className="text-[#1C202B] font-extrabold text-[14px]">
+            {notification.username}
+          </span>{" "}
+          {notification.action}{" "}
+          {notification.post ? (
+            <span className="font-bold">{notification.post}</span>
+          ) : null}
           {notification.groupName ? (
             <span>{notification.groupName}</span>
           ) : null}{" "}
