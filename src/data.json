@@ -14,7 +14,7 @@
     "profilePic": "/images/avatar-angela-gray.webp",
     "action": "followed you",
     "time": "5m ago",
-    "isRead": false
+    "isRead": true
   },
   {
     "id": 3,
@@ -41,7 +41,7 @@
     "action": " commented on your picture",
     "userPicture": "/images/image-chess.webp",
     "time": "1 week ago",
-    "isRead": false
+    "isRead": true
   },
   {
     "id": 6,
@@ -50,7 +50,7 @@
     "action": "reacted to your recent post",
     "post": "5 end-game strategies to increase your win rate",
     "time": "2 weeks ago",
-    "isRead": false
+    "isRead": true
   },
   {
     "id": 7,
