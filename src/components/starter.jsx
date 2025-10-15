@@ -13,16 +13,16 @@ export default function Starter({ notifications, setNotifications }) {
 
   return (
     <header className="w-full flex justify-center">
-      <div className="w-[343px]">
+      <div className="w-[343px] lg:w-[670px]">
         <section className="flex items-center justify-between">
           <h2
             className="text-[#1C202B] font-extrabold text-[20px]
-          [leading-100%] flex gap-[9px]"
+          [leading-100%] flex gap-[9px] lg:text-[24px] lg:gap-[11px]"
           >
             Notifications{" "}
             <div
-              className="ml-[9px] w-[32px] rounded-[7px] bg-[#0A327B] 
-            flex justify-center items-center ml-[8px]"
+              className="w-[32px] rounded-[7px] bg-[#0A327B] 
+            flex justify-center items-center lg:rounded-[6px]"
             >
               {" "}
               <span
@@ -35,7 +35,7 @@ export default function Starter({ notifications, setNotifications }) {
           </h2>
           <span
             onClick={markAllAsRead}
-            className="font-medium text-[14px] leading-[100%] text-[#5E6778] cursor-pointer hover:text-blue-600"
+            className="font-medium text-[14px] leading-[100%] text-[#5E6778] cursor-pointer hover:text-blue-600 lg:text-[17px]"
           >
             Mark all as read
           </span>
