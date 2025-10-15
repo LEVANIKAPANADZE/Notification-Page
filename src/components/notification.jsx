@@ -30,7 +30,7 @@ export default function Notification({
           className="w-[39px] h-[39px] mr-[18px]"
         />
         <span className="font-medium text-[14px] leading-[100%] text-[#5E6778] tracking-[0px] parent">
-          <span className="text-[#1C202B] font-extrabold">
+          <span className="text-[#1C202B] cursor-pointer font-extrabold hover:text-[#0A327B]">
             {notification.username}
           </span>{" "}
           {notification.action}{" "}
@@ -38,7 +38,7 @@ export default function Notification({
             <span className="font-bold">{notification.post}</span>
           ) : null}
           {notification.groupName ? (
-            <span className="text-[#0A327B] font-bold">
+            <span className="text-[#0A327B] font-bold cursor-pointer">
               {notification.groupName}
             </span>
           ) : null}{" "}
@@ -59,7 +59,7 @@ export default function Notification({
       {notification.text ? (
         <div
           className="mt-[10px] py-[16px] px-[16px] border-[1px] rounded-[5px] border-[#DDE7EE] 
-        w-[263px] ml-[50px]"
+        w-[263px] ml-[50px] hover:bg-[#DDE7EE] cursor-pointer"
         >
           {" "}
           <span className="text-[#5E6778] font-normal text-[14px] leading-[100%] tracking-[0px]">
