@@ -7,28 +7,23 @@ function App() {
   const [notifications, setNotifications] = useState(data);
 
   return (
-    <>
-      <div>
-        {" "}
-        <Starter
-          notifications={notifications}
-          setNotifications={setNotifications}
-        />
-        <main className="mt-6">
-          {" "}
-          {notifications.map((notification) => {
-            return (
-              <Notification
-                notification={notification}
-                key={notification.id}
-                notifications={notifications}
-                setNotifications={setNotifications}
-              />
-            );
-          })}
-        </main>
-      </div>
-    </>
+    <div className="bg-white lg:py-[30px] lg:px-[30px] lg:rounded-[15px]">
+      <Starter
+        notifications={notifications}
+        setNotifications={setNotifications}
+      />
+
+      <main className="mt-4">
+        {notifications.map((notification) => (
+          <Notification
+            key={notification.id}
+            notification={notification}
+            notifications={notifications}
+            setNotifications={setNotifications}
+          />
+        ))}
+      </main>
+    </div>
   );
 }
 

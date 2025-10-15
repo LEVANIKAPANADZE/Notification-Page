@@ -10,6 +10,7 @@ body {
   min-height: 100vh;
   flex-direction: column;
   padding: 24px 16px 24px 16px;
+  background-color: White;
 }
 
 .circle {
@@ -19,12 +20,23 @@ body {
   background-color: red;
   border-radius: 50%;
   margin-left: 5px;
+  transition: background-color 0.2s;
+  cursor: pointer;
 }
 
-@media (min-width: 1440px) {
+.circle:hover {
+  background-color: #ffb3b3;
+}
+
+@media (min-width: 1024px) {
   .circle {
     width: 12px;
     height: 12px;
+  }
+
+  body {
+    background-color: #f7fafd;
+    padding: 63px 355px 89px 355px;
   }
 }
 
