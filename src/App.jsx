@@ -8,24 +8,26 @@ function App() {
 
   return (
     <>
-      <Starter
-        notifications={notifications}
-        setNotifications={setNotifications}
-      />
-
-      <main className="mt-6">
+      <div>
         {" "}
-        {notifications.map((notification) => {
-          return (
-            <Notification
-              notification={notification}
-              key={notification.id}
-              notifications={notifications}
-              setNotifications={setNotifications}
-            />
-          );
-        })}
-      </main>
+        <Starter
+          notifications={notifications}
+          setNotifications={setNotifications}
+        />
+        <main className="mt-6">
+          {" "}
+          {notifications.map((notification) => {
+            return (
+              <Notification
+                notification={notification}
+                key={notification.id}
+                notifications={notifications}
+                setNotifications={setNotifications}
+              />
+            );
+          })}
+        </main>
+      </div>
     </>
   );
 }
