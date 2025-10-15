@@ -57,9 +57,14 @@ export default function Notification({
       </div>
 
       {notification.text ? (
-        <div className="mt-[10px] py-[16px] px-[16px]">
+        <div
+          className="mt-[10px] py-[16px] px-[16px] border-[1px] rounded-[5px] border-[#DDE7EE] 
+        w-[263px] ml-[50px]"
+        >
           {" "}
-          <span className="">{notification.text}</span>
+          <span className="text-[#5E6778] font-normal text-[14px] leading-[100%] tracking-[0px]">
+            {notification.text}
+          </span>
         </div>
       ) : null}
     </div>
