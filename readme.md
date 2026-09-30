@@ -1,4 +1,4 @@
-# 📬 Notifications UI
+# 📬 Notifications Page
 
 A clean and responsive React notifications UI that perfectly mirrors a Figma design. The interface features a grey page background with a centered white card containing stacked notification items. Built with **React + Tailwind CSS**, this project is fully responsive, works seamlessly on mobile and desktop, and includes interactive features like marking notifications as read. Easy to copy & paste — no extra setup required if you already have the project files in place.
 
