@@ -4,7 +4,7 @@ A clean and responsive React notifications UI that perfectly mirrors a Figma des
 
 ---
 
-## ✨ Features
+## ✨ Features:
 
 - ✅ Fully responsive design for mobile, tablet, and desktop
 - ✅ Grey page background with a centered white card for content
