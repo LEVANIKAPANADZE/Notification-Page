@@ -11,6 +11,6 @@ A clean and responsive React notifications UI that perfectly mirrors a Figma des
 - ✅ Unread and read notifications clearly indicated with a red dot
 - ✅ Header includes a live unread counter and a "Mark all as read" button
 - ✅ Individual notifications are clickable to mark as read
-- ✅ Minimal and clean Tailwind CSS styling, easy to customize
+- ✅ Minimal and clean Tailwind CSS styling, very easy to customize
 - ✅ Works out-of-the-box with a simple JSON data structure for notifications
 - ✅ Matches Figma layout and spacing for a professional look
